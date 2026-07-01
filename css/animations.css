@@ -1,0 +1,195 @@
+/* ===========================
+   FADE-IN ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===========================
+   SCROLL REVEAL
+=========================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:all .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.hero.reveal{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   BUTTON ANIMATION
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:16px 42px;
+
+    background:#C9A227;
+
+    color:#111;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:all .4s ease;
+
+    margin-right:20px;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(212,175,55,.5);
+
+}
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.card{
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+}
+
+/* ===========================
+   PORTFOLIO
+=========================== */
+
+.portfolio-item{
+    transition:.4s;
+}
+
+.portfolio-item:hover{
+    transform:translateY(-12px);
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+}
+
+.portfolio-item img{
+    transition:transform .6s ease;
+}
+
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery-grid img{
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.08);
+    box-shadow:0 15px 30px rgba(0,0,0,.5);
+}
+
+/* ===========================
+   NAVIGATION LINKS
+=========================== */
+
+.navbar a{
+    position:relative;
+    transition:color .3s ease;
+}
+
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#C9A227;
+    transition:.3s;
+}
+
+.navbar a:hover::after{
+    width:100%;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    transition:transform .3s ease;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    animation:fadeUp 1.2s;
+}
+
+
+.navbar a.active{
+    color:#C9A227;
+}
+
+.navbar a.active::after{
+    width:100%;
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid #C9A227;
+
+    color:#fff;
+
+}
+
+.btn-outline:hover{
+
+    background:#C9A227;
+
+    color:#111;
+
+}
