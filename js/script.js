@@ -221,7 +221,3 @@ reveals.forEach(section => {
     observer.observe(section);
 
 });
-
-window.addEventListener("scroll", revealSections);
-
-revealSections();
