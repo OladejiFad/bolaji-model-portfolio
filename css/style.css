@@ -1077,3 +1077,9 @@ transform:translateY(-12px) scale(1.03);
     background:#111;
     border-radius:14px;
 }
+
+.logo img{
+    height:60px;
+    width:auto;
+    display:block;
+}
