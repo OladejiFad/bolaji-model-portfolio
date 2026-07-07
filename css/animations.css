@@ -20,9 +20,8 @@
 
 .reveal{
 
-    opacity:0;
-
-    transform:translateY(70px);
+    opacity:1;
+    transform:none;
 
     transition:all .9s ease;
 
@@ -115,7 +114,7 @@
 =========================== */
 
 .gallery-grid img{
-    transition:.4s;
+    transition:transform .4s ease, box-shadow .4s ease;
 }
 
 .gallery-grid img:hover{
