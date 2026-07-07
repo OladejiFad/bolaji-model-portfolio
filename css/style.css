@@ -1070,6 +1070,10 @@ transform:translateY(-12px) scale(1.03);
 }
 
 .campaign-gallery img{
+    width:100%;
+    height:500px;
     object-fit:contain;
+    object-position:center;
     background:#111;
+    border-radius:14px;
 }
