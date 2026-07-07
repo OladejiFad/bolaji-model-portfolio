@@ -200,24 +200,38 @@ counters.forEach(counter => animateCounter(counter));
 
 const reveals = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries)=>{
 
-    entries.forEach(entry => {
+    entries.forEach(entry=>{
 
         if(entry.isIntersecting){
 
             entry.target.classList.add("active");
+
+            observer.unobserve(entry.target);
 
         }
 
     });
 
 },{
-    threshold:0.15
+    threshold:0.05
 });
 
-reveals.forEach(section => {
+
+reveals.forEach(section=>{
 
     observer.observe(section);
 
 });
+
+
+setTimeout(()=>{
+
+    reveals.forEach(section=>{
+
+        section.classList.add("active");
+
+    });
+
+},1500);
